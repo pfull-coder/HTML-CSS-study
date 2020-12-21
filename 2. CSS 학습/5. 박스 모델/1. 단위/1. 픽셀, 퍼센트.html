@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body * {
+            border: 2px solid #000;
+        }
+
+        .container {
+            width: 600px;
+        }
+        /* 퍼센트는 바로 위 속성 기준으로 변함 */
+        .parent {
+            /* width: 300px; */
+            width: 50%;
+        }
+        .child {
+            /* w50p + tap */
+            width: 50%;
+        }
+    </style>
+        
+    }
+
+</head>
+
+
+<body>
+    <!-- div.container>div.parent>div.child*2 -->
+    <div class="container">Container
+        <div class="parent">Parent
+            <div class="child">Child 1</div>
+            <div class="child">Child 2</div>
+        </div>
+    </div>
+    
+</body>
+</html>

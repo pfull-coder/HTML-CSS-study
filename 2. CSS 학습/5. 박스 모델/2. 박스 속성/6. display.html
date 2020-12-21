@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docment</title>
+
+    <style>
+
+    /* span, a는 모두 인라인 요소이기 때문에 기본적으로
+    display: inline;이 기본속성으로 적용되어 있습니다. */
+        span {
+            /* display: inline; */
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        a {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+
+        input {
+            /* input은 기본적으로 inline-block 속성이 적용되어 있습니다. */
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+        }
+
+        input:nth-child(2) {
+            /* 숨기는 방법 2가지 // 단, display: none;은 해당 공간이 없어진다. */
+            display: none;
+            /* opacity: 0; */
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: deepskyblue;
+        }
+        .hide {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <span></span>
+
+    <a href="#">네이버 링크</a>
+    <a href="#">구글 링크</a>
+    
+    <br>
+
+<div>    
+    <input type="text" value="1">
+    <input type="text" value="2">
+    <input type="text" value="3">
+    <input type="text" value="4">
+    <input type="text" value="5">
+</div>
+
+<button class="btn">클릭!</button>
+<div class="box"></div>
+
+<script>
+    const box = document.querySelector('.box');
+    const btn = document.querySelector('.btn');
+
+    btn.addEventListener('click', function() {
+
+        // toggle 있으면 빼고 없으면 추가하는 기능이다.
+        box.classList.toggle('hide');
+    });
+</script>
+
+</body>
+</html>

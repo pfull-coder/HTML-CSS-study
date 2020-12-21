@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            width: 200px;
+            height: 300px;
+            border: 4px solid blue;
+            margin: 20px;
+
+        }
+        
+        .child {
+            /* max, min은 레이아웃이 깨지는 것을 방지하기 위해 최대, 최소 범위를 지정
+            하지만 최대값과 최소값을 벗어나면 깨진다 */
+            max-width: 400px;
+            min-width: 200px;
+            height: 200px;
+            background: orange;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+</body>
+</html>

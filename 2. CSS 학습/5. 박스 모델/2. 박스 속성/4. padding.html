@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            /* 패딩값이 부여되면 추가된 패딩값 만큼 width와 height에 길이가 늘어남 */
+            padding: 30px;
+            /* 늘어나는 값을 없애기 위해서 box-sizing: boder-box;를 이용하면 패딩값이 부여되도 길이에 변화없음 */
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        Hello world :)
+    </div>
+</body>
+</html>
