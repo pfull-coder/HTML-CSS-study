@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 100px;
+            /* 500 x 500 사이즈 이미지 */
+            background-image: url(images/basic.jpg);
+            background-repeat: no-repeat;
+
+            /* background-size: 200px 100px; */
+            /* background-size: 200px; 처럼 width만 적용하는 경우 height는 이미지 비율에 맞게 조정됨. */
+            /* background-size: cover; 요소(Element)에서 더 긴 영역에 맞춤. */
+            /* background-size: contain; 요소(Element)의 더 짧은 영역에 맞춤. */
+            background-size: cover;
+            /* 배경 위치변경 width height 순서*/
+            background-position: 0 -50px;
+        }
+    </style>
+
+<body>
+    <div class="box"></div>    
+</body>
+</html>

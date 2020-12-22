@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 550px;
+            height: 350px;
+            border: 2px dashed #333;
+
+            /* background: #ffc342 url(./images/sky.jpg) no-repeat center 50px / cover; 한줄로 표현 가능*/
+            background-color: #ffc342;
+            background-image: url(./images/sky.jpg);
+            /* repeat-x x축으로만 반복되는 명령어 // no-repeat은 반복 없음 */
+            background-repeat: no-repeat;
+            background-position: center 50px;
+
+            background-size: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
