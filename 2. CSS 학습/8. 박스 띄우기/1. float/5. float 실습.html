@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+
+    <style>
+        section {
+            margin: 50px auto 0;
+            border: 3px double #626262;
+            width: 800px;
+            text-align: center;
+        }
+
+        section h1 {
+            margin: 0;
+            padding: 20px 10px;
+            font-size: 35px;
+            font-family: 'Song Myung', monospace;
+            color: #252e2e;
+            background-color: lightgray;
+        }
+        section p.intro {
+            margin: 0;
+            padding: 10px;
+            color: #ffffff;
+            background:#3f2f25;
+
+        }
+        section p.intro em {
+            color: #f6d410;
+            font-style: normal;
+        }
+
+        section ul {
+            margin: 0;
+            padding: 20px 10px;
+            background-color: #3d3c3c;
+            color: #353535;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        section>ul>li#tulip {
+            width: 160px;
+            height: 200px;
+            padding: 3px;
+            margin: 2px;
+            background: red url(images/tulip.jpg);
+            background-size: 150px 100px;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        section>ul>li#jebi {
+            width: 160px;
+            height: 200px;
+            padding: 3px;
+            margin: 2px;
+            background:purple url(images/jebi.jpg);
+            background-size: 150px 100px;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        section>ul>li#hobak {
+            width: 160px;
+            height: 200px;
+            padding: 3px;
+            margin: 2px;
+            background: #f06f06 url(images/hobak.jpg);
+            background-size: 150px 100px;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        section>ul>li#sunflower {
+            width: 160px;
+            height: 200px;
+            padding: 3px;
+            margin: 2px;
+            background: orange url(images/sunflower.jpg);
+            background-size: 150px 100px;
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>나의 아름다운 정원</h1>
+        <p class="intro">사람들은 아마 자신에게 <em>자신감을 북돋워 주는</em>
+            표정 있는 꽃들을 선호할 것이다.</p>
+
+        <ul class="gallery clearfix">
+            <li id="tulip">
+                <h2></h2>
+                <p>
+                    너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                    붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.
+                </p>
+            </li>
+            <li id="jebi">
+                <h2></h2>
+                <p>
+                    드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                    어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+                </p>
+            </li>
+            <li id="hobak">
+                <h2></h2>
+                <p>
+                    색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                    매우 완숙한 이미지를 풍기는 꽃이다.
+                </p>
+            </li>
+            <li id="sunflower">
+                <h2></h2>
+                <p>
+                    태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                    속하며 송이가 적어야 제격이다.
+                </p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
