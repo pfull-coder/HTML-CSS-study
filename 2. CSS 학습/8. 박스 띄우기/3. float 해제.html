@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class^="container"] {
+            width: 500px;
+            padding: 20px;
+            border: 3px solid red;
+            
+            /* overflow: hidden; ---- 박스 영역 깨짐 방지 편법*/
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            font-size: 50px;
+            float: left;
+        }
+        /* float 해제 요소에는 반드시 block 요소가 필요!!
+            임의 클래스(clearfix)를 적용해서 다양하게 적용 */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- .container>.box{$}*2 + tap -->
+    <div class="container clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+
+    <div class="container2 clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+
+    <div class="container3 clearfix">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+</body>
+</html>
