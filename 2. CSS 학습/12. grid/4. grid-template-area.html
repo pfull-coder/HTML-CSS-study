@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            margin: 100px;
+            width: 600px;
+            display: grid;
+
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-areas: 
+                /* " . "은 비울 자리에 사용 가능 */
+                "head head head"
+                "main main side"
+                ". foot foot" ;
+
+                /* row-gap: 20px;
+                column-gap: 15px; */
+                
+                /* 행공백 열공백 */
+                gap: 20px 15px;
+        }
+
+        .wrap > * {
+            border: 5px solid red;
+        }
+
+        .wrap header {
+            /* 영역이름 지정 */
+            grid-area: head;
+            
+        }
+
+        .wrap section {
+            grid-area: main;
+        }
+
+        .wrap aside {
+            grid-area: side;
+        }
+
+        .wrap footer {
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>Header</header>
+
+        <section class="main">
+            Main
+        </section>
+
+        <aside>Aside</aside>
+
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>
